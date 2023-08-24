@@ -97,6 +97,6 @@ def compute_dynamics(model_directory: str, dataset: str, dataset_subset: Optiona
         model.to(device)
         evaluate_model(model=model, train_dataloader=train_dataloader, output_dir=model_directory, device=device, epoch=epoch)
 
-MODEL_DIR = "/home/mlynatom/models/xlm-roberta-large-squad2-csfever_v2-original_nli-batchsize-9-wr0.4"
+MODEL_DIR = "/home/mlynatom/models/xlm-roberta-large-squad2-csfever_v2-original_nli-batchsize-9-wr0.4-steps3000"
 
 compute_dynamics(model_directory=MODEL_DIR, dataset="ctu-aic/csfever_v2", dataset_subset="original_nli")
